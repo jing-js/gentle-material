@@ -1,0 +1,68 @@
+@import "../style/var.less";
+
+.md-raised-btn, .md-floating-btn, .md-flat-btn {
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all @ease-out-motion 0.45s;
+  .user-select(none);
+}
+
+.md-raised-btn, .md-flat-btn {
+  padding: 0 16px;
+  min-width: 88px;
+  line-height: 36px;
+  height: 36px;
+}
+.md-raised-btn {
+  &.disabled {
+    background-color: @faint-black;
+    color: @min-black;
+  }
+}
+
+.md-flat-btn {
+
+}
+
+.md-floating-btn {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  position: fixed;
+
+  .md-btn-back, .md-btn-front {
+    border-radius: 50%;
+  }
+
+  .material-icons {
+    position: relative;
+    top: 8px;
+  }
+
+  &.md-mini {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+    .material-icons {
+      top: 4px;
+    }
+  }
+
+}
+
+body.dence, body.tall {
+  .md-raised-btn, .md-floating-btn, .md-flat-btn {
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.md-floating-btn {
+  
+}

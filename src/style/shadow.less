@@ -1,0 +1,31 @@
+.md-shadow-z-depth-0 {
+  box-shadow: @z-depth-0;
+}
+.md-shadow-z-depth-1 {
+  box-shadow: @z-depth-1;
+}
+.md-shadow-z-depth-1-half {
+  box-shadow: @z-depth-1-half;
+}
+.md-shadow-z-depth-2 {
+  box-shadow: @z-depth-2;
+}
+.md-shadow-z-depth-3 {
+  box-shadow: @z-depth-3;
+}
+.md-shadow-z-depth-4 {
+  box-shadow: @z-depth-4;
+}
+.md-shadow-z-depth-5 {
+  box-shadow: @z-depth-5;
+}
+
+.loop(@counter) when (@counter < 25) {
+
+  .md-shadow-elevation-@{counter} {
+    box-shadow: 0 round(@counter * 1.5px) (@counter * 2px) 0 rgba(0, 0, 0, round(0.16 + (0.3 - 0.16) * @counter / 24, 2)), 0 round(1px + @counter * 0.3) (10px + @counter * 2) 0 rgba(0, 0, 0, 0.12);
+  }
+  .loop(@counter + 1);
+}
+
+.loop(1);

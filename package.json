@@ -1,0 +1,26 @@
+{
+  "name": "gentle-material",
+  "version": "0.0.1",
+  "description": "yet another material design ui",
+  "main": "./dist/index.js",
+  "entry": {
+    "index": "./src/entry.js"
+  },
+  "externals": {
+    "react": "React"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "apack-build -o ./dist --disable-cache",
+    "dev": "apack-server --public-path ./demo",
+    "publish": "npm run build && npm publish"
+  },
+  "author": "Yuhang Ge <abeyuhang@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "apack-build": "~1.0.3"
+  },
+  "peerDependencies": {
+    "react": "~0.14.0"
+  }
+}

@@ -1,0 +1,43 @@
+@import "./var.less";
+@import "./font.less";
+
+* {
+  box-sizing: border-box;
+}
+
+li, ol {
+  list-style: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", "Noto", "Helvetica Neue", "Helvetica", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei","微软雅黑", Arial, sans-serif;
+  font-size: @font-size-body-1;
+  color: @text-color-body-1;
+  p {
+    line-height: @line-height-body-1;
+  }
+}
+
+body.dence {
+  font-size: @font-size-dence-body-1;
+  p {
+    line-height: @line-height-dence-body-1;
+  }
+}
+
+body.tall {
+  font-size: @font-size-tall-body-1;
+  p {
+    line-height: @line-height-tall-body-1;
+  }
+}
+
+@import "./shadow.less";
+@import "./wave.less";
+
+@import "../icon/icon.less";
+@import "../button/button.less";

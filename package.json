@@ -13,7 +13,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "apack-build -o ./dist --disable-cache",
     "dev": "apack-server --public-path ./demo",
-    "publish": "npm run build && npm publish"
+    "pub": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jing-js/gentle-material"
   },
   "author": "Yuhang Ge <abeyuhang@gmail.com>",
   "license": "ISC",

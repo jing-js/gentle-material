@@ -39,4 +39,7 @@ import { RaisedButton, FlatButton, FloatingButton } from 'gentle-material/src/bu
 
 ## Docs & API
 
-Sorry, you have to wait, we are just keep working hard...
+Sorry, you have to wait, I'm just keep working hard...
+
+You may join this project or donate it, 
+send email to me(abeyuhang@gmail.com) if you have any question.

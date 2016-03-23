@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "apack-build -o ./dist --disable-cache",
-    "dev": "apack-server --public-path ./demo",
+    "dev": "apack-dev-server --public-path ./demo",
     "pub": "npm run build && npm publish"
   },
   "repository": {
@@ -22,7 +22,7 @@
   "author": "Yuhang Ge <abeyuhang@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "apack-build": "~1.0.3"
+    "apack-build": "^1.0.0"
   },
   "peerDependencies": {
     "react": "~0.14.0"

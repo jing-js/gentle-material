@@ -23,9 +23,13 @@
 .loop(@counter) when (@counter < 25) {
 
   .md-shadow-elevation-@{counter} {
-    box-shadow: 0 round(@counter * 1.5px) (@counter * 2px) 0 rgba(0, 0, 0, round(0.16 + (0.3 - 0.16) * @counter / 24, 2)), 0 round(1px + @counter * 0.3) (10px + @counter * 2) 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 (@counter * 1px) 0 rgba(0, 0, 0, 0.12), 0 (@counter * 1px) (@counter * 1px) 0 rgba(0, 0, 0, 0.24);
   }
   .loop(@counter + 1);
 }
 
 .loop(1);
+
+//.md-shadow-elevation-24 {
+//  box-shadow: 0 15px 12px 0 rgba(0, 0, 0, 0.22), 0 19px 38px 0 rgba(0, 0, 0, 0.3);
+//}
